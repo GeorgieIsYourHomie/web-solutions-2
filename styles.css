@@ -27,6 +27,12 @@ li {
   color: #000000;
 }
 
+ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+}
 ul li {
   list-style: none;
   margin-left: -1.75rem;
