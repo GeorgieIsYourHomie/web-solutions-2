@@ -84,10 +84,22 @@ ul li {
     text-transform: uppercase;
 }
 
+.project-group {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
 @media (min-width: 640px) {
   .display-title {
     width: auto;
     font-size: clamp(2.5rem, 7.5vw, 12rem);
+  }
+  .project-group {
+    gap: 1rem; /* Set gap to 1rem for medium devices and up */
   }
 }
 
@@ -95,10 +107,16 @@ ul li {
   .display-title {
     font-size: clamp(2.5rem, 9vw, 12rem);
   }
+  .project-group {
+    gap: 1rem; /* Set gap to 1rem for medium devices and up */
+  }
 }
 
 @media (min-width: 1280px) {
   .display-title {
     font-size: clamp(2.5rem, 9vw, 12rem);
+  }
+  .project-group {
+    gap: 1rem; /* Set gap to 1rem for medium devices and up */
   }
 }
